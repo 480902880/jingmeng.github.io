@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晶盟</title>
+    <link rel="stylesheet" href="style/1.css">
+	<script src="JavaScript/1.js" defer></script> <!-- 引入外部JS，使用defer确保页面加载后再执行脚本 -->
+</head>
+<body>
+	  <header>
+		   <div class="logo">
+            <img src="images/JMLogo.png" alt="晶盟 Logo">
+        </div>
+<nav>
+    <ul id="manNav">
+		<li><a href="1.html" onclick="delayLoad('1.html')">首页</a></li>
+        <li><a href="down.html" onclick="delayLoad('down.html')">下载</a></li>
+        <li><a href="help.html" onclick="delayLoad('help.html')">帮助</a></li>
+        <li><a href="about.html" onclick="delayLoad('about.html')">关于</a></li>
+        <li><a href="contact.html" onclick="delayLoad('contact.html')">联系方式</a></li>
+    </ul>
+</nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到晶盟</h1>
+            <p>一款开源且有自由发言，不受任何组织和国家媒体干预的免费社交软件</p>
+        </div>
+		<!-- 在原有的HTML结构之后添加底部文本内容 -->
+ <div id="loadOverlay" style="display:none;">
+        <img id="loadingImage" src="images/loading2.png" alt="加载中...">
+        <div id="progressBar"></div>
+    </div>
+<div class="overlay-text">
+    <p>Copyright © by Fantasy All Rights Reserved.</p>
+	<p>技术支持：蔣申</p>
+</div>
+</section>
+<div class="center-content">
+</div>
+	
+</body>
+</html>
